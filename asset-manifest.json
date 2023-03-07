@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/ARJUn9893/alpha.git/static/css/main.bd63d5c1.css",
-    "main.js": "/ARJUn9893/alpha.git/static/js/main.840c7e7f.js",
-    "index.html": "/ARJUn9893/alpha.git/index.html",
-    "main.bd63d5c1.css.map": "/ARJUn9893/alpha.git/static/css/main.bd63d5c1.css.map",
-    "main.840c7e7f.js.map": "/ARJUn9893/alpha.git/static/js/main.840c7e7f.js.map"
+    "main.css": "/alpha/static/css/main.bd63d5c1.css",
+    "main.js": "/alpha/static/js/main.840c7e7f.js",
+    "index.html": "/alpha/index.html",
+    "main.bd63d5c1.css.map": "/alpha/static/css/main.bd63d5c1.css.map",
+    "main.840c7e7f.js.map": "/alpha/static/js/main.840c7e7f.js.map"
   },
   "entrypoints": [
     "static/css/main.bd63d5c1.css",
