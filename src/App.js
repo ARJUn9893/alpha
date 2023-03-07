@@ -1,24 +1,40 @@
-import logo from './logo.svg';
+import { MathJaxContext } from 'better-react-mathjax';
+import { useEffect, useState } from 'react';
 import './App.css';
+import Home from './Components/Home';
+import Navbar from './Components/Navbar';
+
+
+
+const quesId = [
+  "AreaUnderTheCurve_901",
+  "BinomialTheorem_901",
+  "DifferentialCalculus2_901"
+];
 
 function App() {
+  const [ques, setQues] = useState([]);
+  const [flag, setFlag] = useState(false);
+  const data = async (val) => {
+    fetch(`https://0h8nti4f08.execute-api.ap-northeast-1.amazonaws.com/getQuestionDetails/getquestiondetails?QuestionID=${val}`)
+      .then((res) => res.json())
+      .then((result) => { setQues((pre) => [...pre, result[0]]); setFlag(true); })
+      .catch((err) => { console.log(err) });
+  }
+
+  useEffect(() => {
+    quesId.forEach((val) => {
+      data(val);
+    })
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <MathJaxContext>
+      {flag && <Home data={ques} />}
+      </MathJaxContext>
+    </>
   );
 }
 
