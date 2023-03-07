@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ARJUn9893/alpha.git/static/css/main.93e59153.css",
+    "main.css": "/ARJUn9893/alpha.git/static/css/main.bd63d5c1.css",
     "main.js": "/ARJUn9893/alpha.git/static/js/main.840c7e7f.js",
     "index.html": "/ARJUn9893/alpha.git/index.html",
-    "main.93e59153.css.map": "/ARJUn9893/alpha.git/static/css/main.93e59153.css.map",
+    "main.bd63d5c1.css.map": "/ARJUn9893/alpha.git/static/css/main.bd63d5c1.css.map",
     "main.840c7e7f.js.map": "/ARJUn9893/alpha.git/static/js/main.840c7e7f.js.map"
   },
   "entrypoints": [
-    "static/css/main.93e59153.css",
+    "static/css/main.bd63d5c1.css",
     "static/js/main.840c7e7f.js"
   ]
 }
